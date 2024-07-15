@@ -1,0 +1,76 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjusted to cover the entire viewport height */
+  margin: 0;
+  padding: 0;
+  background-image: url("bgpic.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+  
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%; /* Adjust the left space */
+  right: 10%; /* Adjust the right space */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: -1; /* Ensure it's behind content */
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+.navbar {
+ 
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Padding top and bottom */
+}
+
+
+
+
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display the list items horizontally */
+}
+
+.nav-links li {
+  margin-left: 220px; /* Adjust spacing between nav items */
+  margin-top:30px;
+  font-size:35px;
+}
+
+.nav-links li a {
+  color: #fff; /* Link text color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+
+.nav-links li a:hover {
+  color: aqua; /* Link text color on hover */
+  text-decoration: underline;
+}
+.content{
+  color: aliceblue;
+  position: absolute;
+  top:200px;
+  left:70px;
+  font-size: 90px;
+}
+.content span{
+  color: aqua;
+ position: relative;
+ left:30px;
+}
